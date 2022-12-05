@@ -23,4 +23,6 @@ Deve matricular um aluno
 
     Select Plan       Smart
 
-    #Sleep    10
+    Fill Start Date
+
+    Sleep    10
