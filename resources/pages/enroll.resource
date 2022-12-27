@@ -64,5 +64,7 @@ Fill Start Date
         Keyboard Key    press    ${number}
     END
 
+Submmit Enroll Form
+    Click    css=button >> text=Salvar
 
 
