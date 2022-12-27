@@ -13,16 +13,16 @@ Deve matricular um aluno
     ...         email=admin@smartbit.com
     ...         pass=qacademy
 
+    Connect To Postgres
+    Delete Enroll By Email    falcao@gmail.com
+    Disconnect From Database
+
     Do Login    ${admin}
 
     Go To Enrolls
-
     Go To Enroll Form
-
     Select Student    Falcão
-
     Select Plan       Smart
-
     Fill Start Date
-
-    Sleep    10
+    Submmit Enroll Form
+    Verify Toaster    Matrícula cadastrada com sucesso
