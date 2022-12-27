@@ -34,3 +34,12 @@ Delete Enroll By Email
     ...         DELETE FROM public.enrollments where student_id = ${user}[0];
 
     Execute Sql String    ${query}
+
+# Helpers
+Reset Student Enroll
+    [Arguments]    ${email}
+
+    Connect To Postgres
+    Delete Enroll By Email    ${email}
+    Disconnect From Database
+
