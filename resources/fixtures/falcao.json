@@ -1,0 +1,12 @@
+{
+    "student": {
+        "feet_tall": 187,
+        "weight": 96,
+        "age": 35,
+        "email": "jefferson@teste.com",
+        "name": "Jefferson S Ramos"
+    },
+    "enroll": {
+        "plan": "Smart"
+    }
+}
