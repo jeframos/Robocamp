@@ -15,3 +15,17 @@ POST New Student
     ...            headers=${headers}
     ...            expected_status=201
 
+    # Este return foi adicionado para conseguir capturar o ID do usuário para 
+    # utilizar no request abaixo 'POST Question'
+    [Return]    ${response.json()}[id]    
+
+
+# A rota da requisição abaixo é utilizada na API do Frontend Mobile
+POST Question
+    [Arguments]    ${student_id}    ${question}
+
+    ${payload}    Create Dictionary    question=${question}
+
+    POST    http://localhost:3333/students/${student_id}/help-orders
+    ...    json=${payload}
+    ...    expected_status=201
