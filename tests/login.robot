@@ -3,6 +3,15 @@ Documentation    Suite de testes de autenticação
 ...              Administrador deve acessar o portal de gestão de academias
 Resource    ../resources/base.resource
 
+# Comandos que podemos utilizar
+#Suite Setup       Log    Executado uma única vez antes de todos os testes
+#Suite Teardown    Log    Executado uma única vez depois de todos os testes
+
+#Test Setup        Log    Executado sempre antes de cada teste
+#Test Teardown     Log    Executado sempre depois de cada teste
+
+Test Teardown    Take Screenshot
+
 *** Test Cases ***
 Login do Administrador
 
