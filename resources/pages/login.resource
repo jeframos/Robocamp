@@ -4,8 +4,12 @@ Library    Browser
 
 *** Keywords ***
 Go to Login Page
-    New Browser    headless=false    browser=chromium
+    New Browser    headless=false    browser=chromium    # Opcoes Browser: chromium/firefox/webkit
+    #New Browser    headless=false    browser=${BROWSER}    # Opcoes Browser: chromium/firefox/webkit
     New Page       http://localhost:3000/
+    # Importante sempre rodar os testes com a resolução minima, pois elimina o risco
+    # de não encontrar algum elemento mapeado nos testes!
+    Set Viewport Size    1280    720    # Resolucao da tela de automacao
 
 Fill Credentials
     [Arguments]    ${email}    ${password}

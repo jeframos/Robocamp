@@ -1,6 +1,9 @@
 *** Settings ***
 Documentation    Verifica se a aplicação está online
+
 Library   Browser
+
+Test Teardown    Take Screenshot
 
 *** Test Cases ***
 Portal Admin deve estar online

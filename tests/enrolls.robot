@@ -4,6 +4,8 @@ Documentation    Suite de testes de matricula de aluno
 
 Resource    ../resources/base.resource
 
+Test Teardown    Take Screenshot
+
 *** Test Cases ***
 #Testando API
 #    [Tags]    api
