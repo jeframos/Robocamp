@@ -1,2 +1,2 @@
 # Robocamp
-Curso Automação Qacademy
+Curso disponibilizado pela QAcademy - Ministrado Papito
